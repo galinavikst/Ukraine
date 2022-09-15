@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ukraine 💛💙</title>
+    <style>
+      body {
+        max-width: 65%;
+        margin: auto;
+      }
+      .page {
+        background: linear-gradient(rgb(58, 157, 238), #f1f395);
+        padding: 40px;
+        margin: 20px;
+        border-radius: 15px;
+      }
+      h1 {
+        text-align: center;
+        color: #f1f395;
+      }
+      h2 {
+        text-align: center;
+        color: #f1f395;
+      }
+      img {
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-top: 35px;
+        border-radius: 4px;
+        width: -webkit-fill-available;
+      }
+      p {
+        font-size: larger;
+        line-height: 1.4;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .video {
+        font-size: larger;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-size: large;
+        font-weight: normal;
+        background-color: rgb(58, 157, 238);
+        color: #f1f395;
+        border: none;
+        border-radius: 10px;
+        transition: all, 200ms, ease-in-out;
+        box-shadow: 2px 2px 5px rgb(61, 94, 121);
+      }
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      .hand {
+        text-shadow: 0 0 black;
+      }
+      .me {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h1>Ukraine is a soul</h1>
+      <hr />
+      <h2>
+        You may never seen this country, but hear a lot now. I am here to show
+        my Ukraine how i feel it.
+      </h2>
+      <img
+        src="https://cdn.images.express.co.uk/img/dynamic/78/590x/secondary/Ukraine-map-3881027.webp?r=1643417167616"
+        alt="Ukraine on Europe map"
+      />
+      <br />
+      <p>
+        It is difficult to imagine a country you have never been and much more
+        to feel it. Ukraine has an amazing history with significant events,
+        cultural and political figures, achievements. But the main thing is
+        <strong> people </strong>. Without them, there would be nothing and no
+        one. These people create the past, present and future! The souls of
+        Ukrainians are intertwined and sing, dance, work, love, rejoice, cry,
+        warm. The nature can provide food and energy not only to its people, but
+        to half of the world. Arriving as a tourist, you would like to come back
+        again and again, because there is no a stronger feeling of freedom,
+        courage and opportunity than in Ukraine. I can call this land a muse for
+        creators, a peace for the weary, an admiration for travelers.
+      </p>
+      <a
+        href="https://www.youtube.com/watch?v=QonlbHIhMnc"
+        target="_blank"
+        class="video"
+      >
+        Watch the video <span class="hand">👈🏻</span>
+      </a>
+      <br />
+
+      <button><span class="hand">👉🏻</span>Click here</button>
+
+      <div class="me">
+        This page was made by
+        <em>
+          <a
+            href="https://www.facebook.com/galyna.stepanenko"
+            target="_blank"
+            title="facebook"
+          >
+            Halyna Stepanenko
+          </a>
+        </em>
+      </div>
+      <script>
+        function invitation() {
+          let name = prompt("Hi! What is your name?");
+          let beenInUkraine = prompt("Have you been in Ukraine?");
+          beenInUkraine = beenInUkraine.toLocaleLowerCase();
+          if (beenInUkraine === "yes") {
+            alert(
+              `Wow, ${name}, i guess you have got a lot of fun! Hopefully will see you next time😎`
+            );
+          } else {
+            alert(`Happy to invite you to Kyiv , ${name}!`);
+          }
+        }
+        let button = document.querySelector("button");
+        button.addEventListener("click", invitation);
+      </script>
+    </div>
+  </body>
+</html>
